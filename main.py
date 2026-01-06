@@ -4,8 +4,6 @@ from PIL import Image
 from skimage.filters import median
 from skimage.morphology import ball
 
-# Import your functions from the file where you saved them
-# Ensure 'image_utils.py' is in the same folder as this script
 from image_utils import load_image, edge_detection
 
 # 1. Load the image
