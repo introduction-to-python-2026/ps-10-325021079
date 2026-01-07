@@ -40,16 +40,16 @@ def edge_detection(image_array):
     # 2. Define the Kernels
     # Filter for vertical changes (Gradient in Y direction)
     kernelY = np.array([
-        [ 1,  2,  1],
+        [ 1,  1,  1],
         [ 0,  0,  0],
-        [-1, -2, -1]
+        [-1, -1, -1]
     ])
     
     # Filter for horizontal changes (Gradient in X direction)
     kernelX = np.array([
-        [-1, 0, 1],
-        [-2, 0, 2],
-        [-1, 0, 1]
+        [1, 0, -1],
+        [1, 0, -1],
+        [1, 0, -1]
     ])
 
     # 3. Apply Convolution
