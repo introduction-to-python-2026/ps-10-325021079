@@ -16,8 +16,8 @@ def load_image(file_path):
             # Ensure the image is in RGB mode (handling potential transparency/grayscale issues)
             img = img.convert('RGB')
             # Convert the image object to a NumPy array
-            img_array = np.array(img)
-            return img_array
+            image_array = np.array(img)
+            return image_array
             
     except FileNotFoundError:
         print(f"Error: The file at {file_path} was not found.")
