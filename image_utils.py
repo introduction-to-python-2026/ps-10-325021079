@@ -3,8 +3,8 @@ import numpy as np
 from scipy.signal import convolve2d
 
 from image_utils import load_image, edge_detection
-from skimage.filters import median
-from skimage.morphology import ball
+#from skimage.filters import median
+#from skimage.morphology import ball
 
 def load_image(file_path):
     """
